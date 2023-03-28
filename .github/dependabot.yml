@@ -51,3 +51,15 @@ updates:
     labels:
       - "language:python"
       - "type:dependencies"
+
+- package-ecosystem: "pip"
+    directory: "/DfciPkg/UnitTests/DfciTests/"
+    schedule:
+      interval: "daily"
+      timezone: "America/Los_Angeles"
+      time: "01:00"
+    commit-message:
+      prefix: "pip"
+    labels:
+      - "language:python"
+      - "type:dependencies"
